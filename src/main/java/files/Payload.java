@@ -50,5 +50,9 @@ public class Payload {
 				+ "}";
 	}
 	
+	public static String Addbook(String isbn, String aisle) {
+		return aisle;
+		
 	
+	}
 }
