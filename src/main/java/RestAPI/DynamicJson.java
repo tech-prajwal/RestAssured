@@ -19,7 +19,7 @@ public class DynamicJson {
 
 	@Test(dataProvider="BooksData")
 	public void addBook(String isbn,String aisle) throws IOException{
-		RestAssured.baseURI="http://216.10.245.166";
+		RestAssured.baseURI="http://rahulshettyacademy.com";
 		Response resp=given().header("Content-Type","application/json").
 		body(new String(Files.readAllBytes(Paths.get("C:\\Users\\prajw\\eclipse-workspace\\RestAssured\\src\\main\\java\\files\\addplace.json")))).
 		when().post("/Library/Addbook.php").
